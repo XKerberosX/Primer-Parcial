@@ -1,0 +1,32 @@
+body {
+    background-image: url("https://w.wallhaven.cc/full/4x/wallhaven-4xv8xl.jpg");
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.637);
+}
+
+.card-reveal {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.904) !important;
+}
+
+div.card-reveal span.card-title {
+    color: #ffffff !important;
+}
+
+.tabs {
+    background-color: transparent;
+}
+
+table.highlight>tbody>tr:hover {
+    background-color: rgba(238, 110, 115, 0.6);
+}
+
+h5 {
+    color: rgba(238, 110, 115, 0.6);
+}
+
+.listFood {
+    padding: 5px 5px !important;
+}

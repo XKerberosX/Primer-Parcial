@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POOL</title>
+
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/2829/2829004.png" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body style="background-color:rgb(22, 26, 24);">
+    <div class="container section">
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card hover-reveal">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img id="imageT1" class="activator" src="src/mesaOn2.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator white-text">Mesa 1</span>
+                    </div>
+                    <div class="card-action">
+                        <a id="btnT1" onclick="start('1');" class="btn-flat" style="color: rgb(51, 255, 0);">START</a>
+                        <div id="liveTimeT1" class="right grey-text"><i>50 por Hora</i></div>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title black-text text-darken-4">
+                            Mesa 1
+                            <i class="material-icons right">close</i>
+                        </span>
+                        <div>
+                            <table class="bordered highlight">
+                                <tbody>
+                                    <tr>
+                                        <td>inicio</td>
+                                        <td id="startTimeT1">----</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fin</td>
+                                        <td id="finalTimeT1">----</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TOTAL</td>
+                                        <td id="finalCostT1">$0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card hover-reveal">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img id="imageT2" class="activator" src="src/mesaOn2.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator white-text">Mesa 2</span>
+                    </div>
+                    <div class="card-action section">
+                        <a id="btnT2" onclick="start('2');" class="btn-flat" style="color: rgb(51, 255, 0);">START</a>
+                        <div id="liveTimeT2" class="right grey-text"><i>50 por Hora</i></div>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title black-text text-darken-4">
+                            Mesa 2
+                            <i class="material-icons right">close</i>
+                        </span>
+                        <div>
+                            <table class="bordered highlight">
+                                <tbody>
+                                    <tr>
+                                        <td>inicio</td>
+                                        <td id="startTimeT2">----</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fin</td>
+                                        <td id="finalTimeT2">----</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TOTAL</td>
+                                        <td id="finalCostT2">$0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div class="col s12 m4">
+                <div class="card hover-reveal">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img id="imageT3" class="activator" src="src/mesaOn2.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator white-text">Mesa 3</span>
+                    </div>
+                    <div class="card-action section">
+                        <a id="btnT3" onclick="start('3');" class="btn-flat" style="color: rgb(51, 255, 0);">START</a>
+                        <div id="liveTimeT3" class="right grey-text"><i>50 por Hora</i></div>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title black-text text-darken-4">
+                            Mesa 3
+                            <i class="material-icons right">close</i>
+                        </span>
+                        <div>
+                            <table class="bordered highlight">
+                                <tbody>
+                                    <tr>
+                                        <td>inicio</td>
+                                        <td id="startTimeT3">----</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fin</td>
+                                        <td id="finalTimeT3">----</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TOTAL</td>
+                                        <td id="finalCostT3">$0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card hover-reveal">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img id="imageT4" class="activator" src="src/mesaOn2.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator white-text">Mesa 4</span>
+                    </div>
+                    <div class="card-action section">
+                        <a id="btnT4" onclick="start('4');" class="btn-flat" style="color: rgb(51, 255, 0);">START</a>
+                        <div id="liveTimeT4" class="right grey-text"><i>50 por Hora</i></div>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title black-text text-darken-4">
+                            Mesa 4
+                            <i class="material-icons right">close</i>
+                        </span>
+                        <div>
+                            <table class="bordered highlight">
+                                <tbody>
+                                    <tr>
+                                        <td>inicio</td>
+                                        <td id="startTimeT4">----</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fin</td>
+                                        <td id="finalTimeT4">----</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TOTAL</td>
+                                        <td id="finalCostT4">$0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card hover-reveal">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img id="imageT5" class="activator" src="src/mesaOn2.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator white-text">Mesa 5</span>
+                    </div>
+                    <div class="card-action section">
+                        <a id="btnT5" onclick="start('5');" class="btn-flat" style="color: rgb(51, 255, 0);">START</a>
+                        <div id="liveTimeT5" class="right grey-text"><i>50 por Hora</i></div>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title black-text text-darken-4">
+                            Mesa 5
+                            <i class="material-icons right">close</i>
+                        </span>
+                        <div>
+                            <table class="bordered highlight">
+                                <tbody>
+                                    <tr>
+                                        <td>Inicio</td>
+                                        <td id="startTimeT5">----</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fin</td>
+                                        <td id="finalTimeT5">----</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TOTAL</td>
+                                        <td id="finalCostT5">$0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="card hover-reveal">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img id="imageT6" class="activator" src="src/mesaOn2.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator white-text">Mesa 6</span>
+                    </div>
+                    <div class="card-action section">
+                        <a id="btnT6" onclick="start('6');" class="btn-flat" style="color: rgb(51, 255, 0);">START</a>
+                        <div id="liveTimeT6" class="right grey-text"><i>$50 por hora</i></div>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title black-text text-darken-4">
+                            Mesa 6
+                            <i class="material-icons right">close</i>
+                        </span>
+                        <div>
+                            <table class="bordered highlight">
+                                <thead>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>inicio</td>
+                                        <td id="startTimeT6">----</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fin</td>
+                                        <td id="finalTimeT6">----</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TOTAL</td>
+                                        <td id="finalCostT6">$0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
